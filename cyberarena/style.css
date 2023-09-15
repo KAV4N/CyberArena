@@ -1,0 +1,382 @@
+/* Reset styles */
+:root {
+    --bg-color: #12232E;
+    --fg-color: #007CC7;
+    --fg-light-color: #4DA8DA;
+    --bg-shadow-color: #203647;
+    --text-color: #EEFBFB;
+  }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Body styles */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+	background-color: var(--bg-color);
+
+  }
+  
+  /* Header styles */
+  header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	position: fixed;
+    background-color: var(--fg-color);
+    color: var(--text-color);
+ 
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  
+  a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 18px;
+  }
+
+  
+  /* Main styles */
+  main {
+
+    display: flex;
+  }
+
+  .image-holder{
+	width:100%;
+	height: 300px;
+	background-image: url("icon/virus.jpg"); 
+	background-repeat: repeat;
+	background-position-y: center;
+	background-position-x: center;
+	border: 1px solid var(--bg-shadow-color);
+	border-radius: 10px;
+  }
+
+  .blog-video{
+    width: 50%;
+    height:350px;
+  }
+
+  .blog-link{
+    display: flex;
+    background-color: var(--bg-shadow-color);
+    margin-bottom: 20px;
+	  box-shadow: 1px 1px  5px 1px #151515;
+  }
+
+
+  
+  main li{
+    padding-left: 20px;
+  }
+
+  .section-user {
+	display: flex;
+	flex: 1;
+	max-width: 300px;
+	min-width: 100px;
+	height: auto;
+	padding: 5px;
+	background-image: url("icon/side_bar.jpg"); 
+	background-repeat: repeat;
+	background-size: cover; 
+
+  }
+  .login-box {
+	margin: 0 auto;
+	padding-top: 25px;
+  }
+
+  .section-news {
+	display: flex;
+	padding: 20px;
+	flex:2;
+	border-right: 1px solid var(--bg-shadow-color);
+  }
+
+
+
+  .container-cyber-attack{
+	flex-grow: 1;
+  }
+.container-blog{
+    padding: 20px;
+    margin: 5px;
+    background-color: var(--bg-shadow-color);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+  
+  .section-news h2 {
+	margin-top: 0;
+  }
+  
+  .section-news ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+  }
+  
+  .section-news li {
+	margin-bottom: 20px;
+  }
+  
+  .section-news h3 {
+	margin-top: 0;
+  }
+  
+  .section-news p {
+	margin: 0;
+  }
+
+
+
+  
+  
+  h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+
+
+
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  form label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 10px;
+
+  }
+  
+
+  
+  /* Footer styles */
+  footer {
+    background-color: var(--fg-color);
+    color: var(--text-color);
+    padding: 20px;
+    text-align: center;
+  }
+
+  .topnav {
+    background-color: var(--fg-color);
+    display: flex;
+    align-items: center;
+  }
+  
+  .pagename {
+    color: var(--text-color);
+    font-size: 24px;
+    margin-left: 10px;
+    margin-top: 5px;
+  }
+  
+
+  .menuLinks{
+    display: none;
+  }
+  
+  .topnav a {
+    color: var(--text-color);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    
+  }
+  .topnav a:hover {
+    background-color: var(--fg-light-color);
+    color: var(--text-color);
+  }
+
+  
+  .icon-menu {
+    background:var(--fg-color);
+    display: none;
+  }
+  
+
+
+
+
+  .overlay {
+	height: 100%;
+	width: 100%;
+	display: none;
+	position: fixed;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0, 0.9);
+  }
+  
+  .overlay-content {
+	position: relative;
+	top: 25%;
+	width: 100%;
+	text-align: center;
+	margin-top: 30px;
+  }
+  
+  .overlay a {
+	padding: 8px;
+	text-decoration: none;
+	font-size: 36px;
+	color: #818181;
+	display: block;
+	transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+	color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+	position: absolute;
+	top: 20px;
+	right: 45px;
+	font-size: 60px;
+  }
+  
+
+	.login-box a {
+		
+		border-radius: 2px;
+		
+		color: var(--text-color);
+		background: var(--bg-shadow-color);
+		padding: 10px 15px;
+		text-decoration: none;
+		font-size: 17px;
+		display: block;
+
+	}
+	.login-box a:hover {
+		background-color: var(--bg-color);
+	}
+
+  
+
+  /* Desktop styles */
+  @media screen and (min-width: 1024px) {
+    .icon-menu{
+        display: none;
+    }
+    .container-user-manage{
+      display:flex;
+    }
+
+	main{
+		margin-top: 50px;
+	}
+
+	.pagename{
+		border-right: 1px solid var(--text-color);
+		padding: 0 14px;
+	}
+	.menuLinks{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+  }
+  
+  /* Tablet styles */
+  @media screen and (min-width: 801px) and (max-width: 1023px) {
+    .icon-menu{
+        display: none;
+    }
+	main{
+		margin-top: 100px;
+	}
+	.topnav{
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	.menuLinks{
+		display: flex;
+	}
+
+
+  }
+  
+  /* Smartphone styles */
+  @media screen and (max-width: 800px) {
+	main{
+		margin-top: 50px;
+	}
+  .container-user-manage{
+    display:block;
+  }
+    .icon-menu {
+        display: flex;
+        margin-right: 15px;
+      }
+      .menuLinks{
+          display: none;
+      }
+      .topnav {
+          justify-content: space-between;
+      }
+      .overlay a {
+          font-size: 20px
+      }
+      .overlay .closebtn {
+          font-size: 40px;
+          top: 15px;
+          right: 35px;
+      }
+  }
+
+/*
+
+	<section class="section-user">
+        <div class="login-box">
+            <h1>Login</h1>
+            <form>
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+
+                <input type="submit" value="Log in">
+                <input type="submit" value="Sign in">
+            </form>
+        </div>
+	</section>
+
+*/
+
+
+
+
